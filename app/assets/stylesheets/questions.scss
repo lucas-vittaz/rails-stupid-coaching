@@ -1,30 +1,41 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-$gray: #F4F4F4;
+$gray: #737373;
 
 body {
  background: $gray;
 }
 h1 {
   font-size: 50px;
+  color: white  ;
+}
+p {
+  color: white;
 }
 .container{
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   .question {
     background: #ffffff;
     width: 500px;
+    margin-bottom: 3rem ;
+    border-radius: 15px;
+    padding: 1rem;
   }
   .answer {
     background: hsla(56, 100%, 71%, 0.729);
     width: 500px;
+    margin-bottom: 3rem ;
+    border-radius: 15px;
+    padding: 1rem;
   }
 
 }
 a {
   color: white;
-  background-color: red;
+  background-color: red!important;
   text-decoration: none;
   border-radius: 15px;
   background-color: white;
@@ -32,8 +43,10 @@ a {
   transition: 0.3s ease-in-out;
   width: 200px;
   text-align: center;
+  border: 2px white solid;
   &:hover {
     color: red;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255) !important;
+    border: 2px red solid;
   }
 }
